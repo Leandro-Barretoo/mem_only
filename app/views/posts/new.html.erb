@@ -1,6 +1,7 @@
 <h1> Create your post </h1>
 
 <%= form_with(model: @post, url: posts_path, method: :post) do |form| %>
+    <%= @post.errors.full_messages %>
     <div class="field">
       <%= form.label :title %>
       <%= form.text_field :title %>
