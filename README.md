@@ -2,6 +2,14 @@
 
 This project is built on the fundamentals of creating authentication and validation of a user.
 
+## When a user is signed out:
+
+![image](./signed_out.png)
+
+## When a user is signed in:
+
+![image](./signed_in.png)
+
 ## Built-With
 
 - Ruby -v  2.7.2
