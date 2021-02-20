@@ -1,0 +1,27 @@
+<h1> Create your post </h1>
+
+<%= form_with(model: @post, url: posts_path, method: :post) do |form| %>
+    <%= @post.errors.full_messages %>
+    <div class="field">
+      <%= form.label :title %>
+      <%= form.text_field :title %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :body %>
+      <%= form.text_area :body %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :author %>
+      <%= form.text_field :author %>
+    </div>
+  
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+<% end %>
+
+<br>
+
+<%= link_to "Log out", destroy_user_session_path, method: :delete %>
